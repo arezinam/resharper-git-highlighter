@@ -1,0 +1,66 @@
+[2024-11-02T17-03-12.118233]: <info> Build version: 242.0.20006.14439.2024-10-10T08:01:18
+[2024-11-02T17-03-12.119034]: <info> Connect Host
+[2024-11-02T17-03-12.119100]: <info> Open Host pipe
+[2024-11-02T17-03-12.119189]: <info> Connected to the existing Host process
+[2024-11-02T17-03-12.119738]: <info> Running Host connection loop
+[2024-11-02T17-03-12.120723]: <info> Write protocol version: 257
+[2024-11-02T17-03-12.120929]: <info> Bridge, read answer async
+[2024-11-02T17-03-12.121079]: <info> Bridge, answer received: ok
+[2024-11-02T17-03-12.226858]: <info> Perform process elevation request: C:\Users\Arezinko\AppData\Local\JetBrains\Installations\ReSharperPlatformVs17_79b94df6GitHighlighter_000\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T17-03-12.226959]: <info> Bridge, write command: elevate_process
+[2024-11-02T17-03-12.227057]: <info> Bridge, read answer async
+[2024-11-02T17-03-12.232446]: <info> Bridge, answer received: elevation_ok
+[2024-11-02T17-03-12.232762]: <info> Process elevation request succeeded
+[2024-11-02T17-03-12.338990]: <info> Request Host directories
+[2024-11-02T17-03-12.339081]: <info> Bridge, write command: get_dirs
+[2024-11-02T17-03-12.339176]: <info> Bridge, read answer async
+[2024-11-02T17-03-12.339816]: <info> Bridge, answer received: ok
+[2024-11-02T17-03-12.377104]: <info> Dump directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-03-12.377166]: <info> Log directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-03-12.377193]: <info> Prefix: JetBrains.ETW.Collector.Host
+[2024-11-02T17-03-12.481904]: <info> Request Host directories
+[2024-11-02T17-03-12.481999]: <info> Bridge, write command: get_dirs
+[2024-11-02T17-03-12.482096]: <info> Bridge, read answer async
+[2024-11-02T17-03-12.482547]: <info> Bridge, answer received: ok
+[2024-11-02T17-03-12.517675]: <info> Dump directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-03-12.517770]: <info> Log directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-03-12.517800]: <info> Prefix: JetBrains.ETW.Collector.Host
+[2024-11-02T17-03-12.622947]: <info> Request Host directories
+[2024-11-02T17-03-12.623036]: <info> Bridge, write command: get_dirs
+[2024-11-02T17-03-12.623106]: <info> Bridge, read answer async
+[2024-11-02T17-03-12.623547]: <info> Bridge, answer received: ok
+[2024-11-02T17-03-12.643706]: <info> Dump directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-03-12.643778]: <info> Log directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-03-12.643804]: <info> Prefix: JetBrains.DPA.Collector
+[2024-11-02T17-03-12.749007]: <info> Request Host directories
+[2024-11-02T17-03-12.749096]: <info> Bridge, write command: get_dirs
+[2024-11-02T17-03-12.749195]: <info> Bridge, read answer async
+[2024-11-02T17-03-12.749729]: <info> Bridge, answer received: ok
+[2024-11-02T17-03-12.750849]: <info> Dump directory: C:\Windows\TEMP\JetDumps
+[2024-11-02T17-03-12.750922]: <info> Log directory: C:\Windows\TEMP\JetLogs
+[2024-11-02T17-03-12.750940]: <info> Prefix: JetBrains.DPA.Collector.exe
+[2024-11-02T17-05-41.505771]: <info> Request Host directories
+[2024-11-02T17-05-41.505873]: <info> Bridge, write command: get_dirs
+[2024-11-02T17-05-41.505967]: <info> Bridge, read answer async
+[2024-11-02T17-05-41.506456]: <info> Bridge, answer received: ok
+[2024-11-02T17-05-41.533947]: <info> Dump directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-05-41.534012]: <info> Log directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-05-41.534038]: <info> Prefix: JetBrains.ETW.Collector.Host
+[2024-11-02T17-05-41.633551]: <info> Request Host directories
+[2024-11-02T17-05-41.633651]: <info> Bridge, write command: get_dirs
+[2024-11-02T17-05-41.633798]: <info> Bridge, read answer async
+[2024-11-02T17-05-41.634366]: <info> Bridge, answer received: ok
+[2024-11-02T17-05-41.657668]: <info> Dump directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-05-41.657781]: <info> Log directory: C:\Users\Arezinko\Desktop\FinalniPlugin\GitHighlighter
+[2024-11-02T17-05-41.657817]: <info> Prefix: JetBrains.DPA.Collector
+[2024-11-02T17-05-41.760811]: <info> Request Host directories
+[2024-11-02T17-05-41.760936]: <info> Bridge, write command: get_dirs
+[2024-11-02T17-05-41.761021]: <info> Bridge, read answer async
+[2024-11-02T17-05-41.761498]: <info> Bridge, answer received: ok
+[2024-11-02T17-05-41.761966]: <info> Dump directory: C:\Windows\TEMP\JetDumps
+[2024-11-02T17-05-41.762006]: <info> Log directory: C:\Windows\TEMP\JetLogs
+[2024-11-02T17-05-41.762024]: <info> Prefix: JetBrains.DPA.Collector.exe
+[2024-11-02T17-05-41.763288]: <info> Stop Elevation Host controller...
+[2024-11-02T17-05-41.763352]: <warning> Unable to wait for Elevation Host controller
+[2024-11-02T17-05-41.763656]: <info> Stop Elevation Host controller...
+[2024-11-02T17-05-41.763704]: <warning> Unable to wait for Elevation Host controller

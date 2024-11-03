@@ -1,0 +1,34 @@
+[2024-11-02T16-24-51.764609]: <info> Build version: 242.0.20006.14816.2024-10-10T08:13:52
+[2024-11-02T16-24-51.764877]: <info> Command line arguments: C:\Windows\TEMP\jetbrainsproc_750e9168-1c36-4871-b905-aed135cea8b4\JetBrains.Dpa.Collector.exe 
+[2024-11-02T16-24-51.765486]: <info> pipes server: Host command arrived: 0
+[2024-11-02T16-24-51.765566]: <info> pipes server: Send protocol version 254
+[2024-11-02T16-24-51.765669]: <info> pipes server: Host command arrived: 3
+[2024-11-02T16-24-51.765730]: <info> pipes server: Skip arguments: 
+[2024-11-02T16-24-51.766003]: <info> pipes server: Host command arrived: 2
+[2024-11-02T16-24-51.766129]: <info> pipes server: Start listen clients
+[2024-11-02T16-24-51.877782]: <info> pipes server: Run client
+[2024-11-02T16-24-51.878651]: <info> clients communicator: 1 processing started
+[2024-11-02T17-03-12.231345]: <info> pipes server: Host command arrived: 3
+[2024-11-02T17-03-12.231551]: <info> pipes server: Skip arguments: -s 8 
+[2024-11-02T17-03-12.231786]: <info> pipes server: Host command arrived: 2
+[2024-11-02T17-03-12.232069]: <info> pipes server: Start listen clients
+[2024-11-02T17-03-12.378774]: <info> pipes server: Run client
+[2024-11-02T17-03-12.378851]: <info> clients communicator: 2 processing started
+[2024-11-02T17-03-12.854139]: <info> clients communicator: 2 command received:4
+[2024-11-02T17-03-12.854842]: <info> clients communicator: 2 start_collecting_processes, handle: 1660 client owner pid: 15320
+[2024-11-02T17-03-12.857677]: <info> events_multicast: add_handler
+[2024-11-02T17-03-12.857754]: <info> events_multicast: create consumer
+[2024-11-02T17-03-12.857777]: <info>  provider_start_info: guid: 22fb2cd6-0e7b-422b-a0c7-2fad1fd0e716 event_mask: 10
+[2024-11-02T17-03-12.861480]: <info> starting consumer: JetBrains-Dpa-Process-6692
+[2024-11-02T17-03-12.862421]: <info> collector client: process session id: 0
+[2024-11-02T17-03-12.862508]: <info> clients communicator: 2 send answer ok, session_id:0
+[2024-11-02T17-05-41.419145]: <info> clients communicator: 2 command received:5
+[2024-11-02T17-05-41.419225]: <info> clients communicator: 2 stop_collecting, session_id: 0
+[2024-11-02T17-05-41.419248]: <info> collector client: stop_collecting, session_id:0
+[2024-11-02T17-05-41.419269]: <info> etw collector client: stop process_events_consumer_, session_id:0
+[2024-11-02T17-05-41.419288]: <info> events_multicast: remove_handler
+[2024-11-02T17-05-41.419453]: <info> events_multicast: reset consumer not required
+[2024-11-02T17-05-41.421672]: <info> consumer stopped: JetBrains-Dpa-Process-6692
+[2024-11-02T17-05-41.422050]: <info> etw collector client: consumers stopped, session_id:0
+[2024-11-02T17-05-41.422131]: <info> collector client: collecting stopped, session_id:0
+[2024-11-02T17-05-41.422152]: <info> clients communicator: 2 send answer ok

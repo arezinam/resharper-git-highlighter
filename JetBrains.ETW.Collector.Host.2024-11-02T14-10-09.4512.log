@@ -1,0 +1,873 @@
+[2024-11-02T14-10-09.352682]: <info> Build version: 16.42.0.0.2024-10-10T08:13:52
+[2024-11-02T14-10-09.353400]: <info> Executed as C:\Program Files\JetBrains\ETW Host\16\JetBrains.Etw.Collector.Host.exe
+[2024-11-02T14-10-09.353449]: <info> Image: 64-bit
+[2024-11-02T14-10-09.353480]: <info> Command line arguments: C:\Program Files\JetBrains\ETW Host\16\JetBrains.Etw.Collector.Host.exe 
+[2024-11-02T14-10-09.358937]: <info> Running in service mode
+[2024-11-02T14-10-09.360355]: <info> Service status: SERVICE_START_PENDING
+[2024-11-02T14-10-09.361263]: <info> Service status: SERVICE_RUNNING
+[2024-11-02T14-10-09.363802]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-12-46.185150]: <info> Running client connection loop
+[2024-11-02T14-12-46.185652]: <info> Read protocol version
+[2024-11-02T14-12-46.185725]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-12-46.188293]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-12-46.219536]: <info> Running client connection loop
+[2024-11-02T14-12-46.219978]: <info> Read protocol version
+[2024-11-02T14-12-46.220090]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-12-46.221055]: <info> Protocol version is arrived: 257
+[2024-11-02T14-12-46.221154]: <info> Write the current protocol version: 257
+[2024-11-02T14-12-46.221169]: <info> Client bridge, write answer: ok
+[2024-11-02T14-12-46.328937]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-12-46.329432]: <info> Connect elevated process
+[2024-11-02T14-12-46.343415]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-12-46.345148]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T14-12-46.345330]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T14-12-46.523283]: <info> Elevated process created
+[2024-11-02T14-12-46.575857]: <info> Elevated process bridge, write command: ping
+[2024-11-02T14-12-46.576615]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-12-46.576728]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-12-46.577359]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-12-46.577950]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-12-46.693173]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-12-46.693391]: <info> Client bridge, write answer: ok
+[2024-11-02T14-12-46.821198]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-12-46.821447]: <info> Client bridge, write answer: ok
+[2024-11-02T14-12-46.947025]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-12-46.947360]: <info> Client bridge, write answer: ok
+[2024-11-02T14-12-47.074200]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-12-47.074458]: <info> Client bridge, write answer: ok
+[2024-11-02T14-17-38.626132]: <info> Running client connection loop
+[2024-11-02T14-17-38.626550]: <info> Read protocol version
+[2024-11-02T14-17-38.626612]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-17-38.626950]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-17-38.711232]: <info> Running client connection loop
+[2024-11-02T14-17-38.711565]: <info> Read protocol version
+[2024-11-02T14-17-38.711600]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-17-38.711961]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-17-38.726596]: <info> Running client connection loop
+[2024-11-02T14-17-38.726985]: <info> Read protocol version
+[2024-11-02T14-17-38.727042]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-17-38.727312]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-17-38.759191]: <info> Running client connection loop
+[2024-11-02T14-17-38.759558]: <info> Read protocol version
+[2024-11-02T14-17-38.759646]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-17-38.760561]: <info> Protocol version is arrived: 257
+[2024-11-02T14-17-38.760617]: <info> Write the current protocol version: 257
+[2024-11-02T14-17-38.760626]: <info> Client bridge, write answer: ok
+[2024-11-02T14-17-38.864839]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-17-38.865246]: <info> Connect elevated process
+[2024-11-02T14-17-38.866850]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-17-38.866934]: <info> Connecting to the existing elevated process C:\Users\Arezinko\AppData\Local\JetBrains\Installations\ReSharperPlatformVs17_79b94df6\windows-x64\JetBrains.Dpa.Collector.exe, reference count: 1
+[2024-11-02T14-17-38.866944]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-17-38.866954]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-17-38.867134]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-17-38.867473]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-17-38.975944]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-17-38.976114]: <info> Client bridge, write answer: ok
+[2024-11-02T14-17-39.101867]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-17-39.102009]: <info> Client bridge, write answer: ok
+[2024-11-02T14-17-39.213896]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-17-39.214155]: <info> Client bridge, write answer: ok
+[2024-11-02T14-17-39.340871]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-17-39.341014]: <info> Client bridge, write answer: ok
+[2024-11-02T14-17-39.356887]: <info> Running client connection loop
+[2024-11-02T14-17-39.357214]: <info> Read protocol version
+[2024-11-02T14-17-39.357272]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-17-39.357519]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-22-03.727892]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-22-03.728175]: <info> Client bridge, write answer: ok
+[2024-11-02T14-22-03.854802]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-22-03.855187]: <info> Client bridge, write answer: ok
+[2024-11-02T14-22-03.981879]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-22-03.982092]: <info> Client bridge, write answer: ok
+[2024-11-02T14-22-03.983258]: <info> Disconnect elevated process, reference count: 1
+[2024-11-02T14-22-03.983346]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-22-06.453324]: <info> Running client connection loop
+[2024-11-02T14-22-06.453761]: <info> Read protocol version
+[2024-11-02T14-22-06.453829]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-22-06.454155]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-22-06.470144]: <info> Running client connection loop
+[2024-11-02T14-22-06.470723]: <info> Read protocol version
+[2024-11-02T14-22-06.470819]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-22-06.471674]: <info> Protocol version is arrived: 257
+[2024-11-02T14-22-06.471779]: <info> Write the current protocol version: 257
+[2024-11-02T14-22-06.471796]: <info> Client bridge, write answer: ok
+[2024-11-02T14-22-06.471955]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-22-06.472430]: <info> Connect elevated process
+[2024-11-02T14-22-06.474999]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-22-06.475115]: <info> Connecting to the existing elevated process C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, reference count: 1
+[2024-11-02T14-22-06.475134]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-22-06.475147]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-22-06.475332]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-22-06.475829]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-22-06.591912]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-22-06.592224]: <info> Client bridge, write answer: ok
+[2024-11-02T14-22-06.715804]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-22-06.716045]: <info> Client bridge, write answer: ok
+[2024-11-02T14-22-06.843797]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-22-06.844027]: <info> Client bridge, write answer: ok
+[2024-11-02T14-22-06.969925]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-22-06.970166]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-03.592391]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-03.592738]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-03.720456]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-03.720656]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-03.831667]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-03.832015]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-03.833003]: <info> Disconnect elevated process, reference count: 1
+[2024-11-02T14-24-03.833180]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-24-08.695644]: <info> Running client connection loop
+[2024-11-02T14-24-08.696220]: <info> Read protocol version
+[2024-11-02T14-24-08.696395]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-24-08.696880]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-24-08.712870]: <info> Running client connection loop
+[2024-11-02T14-24-08.713580]: <info> Read protocol version
+[2024-11-02T14-24-08.713674]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-24-08.716943]: <info> Protocol version is arrived: 257
+[2024-11-02T14-24-08.717039]: <info> Write the current protocol version: 257
+[2024-11-02T14-24-08.717060]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-08.717213]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-24-08.717748]: <info> Connect elevated process
+[2024-11-02T14-24-08.722862]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-24-08.723005]: <info> Connecting to the existing elevated process C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, reference count: 1
+[2024-11-02T14-24-08.723045]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-24-08.723069]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-24-08.723329]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-24-08.723831]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-24-08.837679]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-08.837996]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-09.629053]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-09.629446]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-09.756157]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-09.756402]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-09.883199]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-09.883481]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-49.504438]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-49.504646]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-49.629638]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-49.630018]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-49.756505]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-24-49.756710]: <info> Client bridge, write answer: ok
+[2024-11-02T14-24-49.758061]: <info> Disconnect elevated process, reference count: 1
+[2024-11-02T14-24-49.758342]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-28-26.409226]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-28-26.409546]: <info> Client bridge, write answer: ok
+[2024-11-02T14-28-26.532292]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-28-26.532675]: <info> Client bridge, write answer: ok
+[2024-11-02T14-28-26.657178]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-28-26.657654]: <info> Client bridge, write answer: ok
+[2024-11-02T14-28-26.658626]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T14-28-26.658667]: <info> Reference count is null - destroy elevated process
+[2024-11-02T14-28-26.658686]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T14-28-27.665892]: <info> Elevated process exited with code: 0
+[2024-11-02T14-28-27.666018]: <info> Elevated process is destroyed
+[2024-11-02T14-28-27.667812]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-29-31.081397]: <info> Running client connection loop
+[2024-11-02T14-29-31.081872]: <info> Read protocol version
+[2024-11-02T14-29-31.081963]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-29-31.082308]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-29-31.122327]: <info> Running client connection loop
+[2024-11-02T14-29-31.122766]: <info> Read protocol version
+[2024-11-02T14-29-31.122975]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-29-31.124597]: <info> Protocol version is arrived: 257
+[2024-11-02T14-29-31.124689]: <info> Write the current protocol version: 257
+[2024-11-02T14-29-31.124705]: <info> Client bridge, write answer: ok
+[2024-11-02T14-29-31.227696]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-29-31.228075]: <info> Connect elevated process
+[2024-11-02T14-29-31.229803]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-29-31.230063]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T14-29-31.230205]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T14-29-31.275962]: <info> Elevated process created
+[2024-11-02T14-29-31.340094]: <info> Elevated process bridge, write command: ping
+[2024-11-02T14-29-31.340817]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-29-31.340885]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-29-31.341401]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-29-31.341961]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-29-31.442526]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-29-31.442738]: <info> Client bridge, write answer: ok
+[2024-11-02T14-29-31.570673]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-29-31.570937]: <info> Client bridge, write answer: ok
+[2024-11-02T14-29-31.698278]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-29-31.698481]: <info> Client bridge, write answer: ok
+[2024-11-02T14-29-31.818018]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-29-31.818220]: <info> Client bridge, write answer: ok
+[2024-11-02T14-30-34.454863]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-30-34.455199]: <info> Client bridge, write answer: ok
+[2024-11-02T14-30-34.566893]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-30-34.567065]: <info> Client bridge, write answer: ok
+[2024-11-02T14-30-34.679033]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-30-34.679282]: <info> Client bridge, write answer: ok
+[2024-11-02T14-30-34.680780]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T14-30-34.680844]: <info> Reference count is null - destroy elevated process
+[2024-11-02T14-30-34.680861]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T14-30-35.684580]: <info> Elevated process exited with code: 0
+[2024-11-02T14-30-35.684738]: <info> Elevated process is destroyed
+[2024-11-02T14-30-35.686727]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-30-53.599197]: <info> Running client connection loop
+[2024-11-02T14-30-53.599508]: <info> Read protocol version
+[2024-11-02T14-30-53.599571]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-30-53.599882]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-30-53.693004]: <info> Running client connection loop
+[2024-11-02T14-30-53.693389]: <info> Read protocol version
+[2024-11-02T14-30-53.693478]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-30-53.693804]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-30-53.708881]: <info> Running client connection loop
+[2024-11-02T14-30-53.709198]: <info> Read protocol version
+[2024-11-02T14-30-53.709270]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-30-53.709547]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-30-53.724170]: <info> Running client connection loop
+[2024-11-02T14-30-53.724485]: <info> Read protocol version
+[2024-11-02T14-30-53.724543]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-30-53.724772]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-30-53.760132]: <info> Running client connection loop
+[2024-11-02T14-30-53.760449]: <info> Read protocol version
+[2024-11-02T14-30-53.760509]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-30-53.761326]: <info> Protocol version is arrived: 257
+[2024-11-02T14-30-53.761385]: <info> Write the current protocol version: 257
+[2024-11-02T14-30-53.761398]: <info> Client bridge, write answer: ok
+[2024-11-02T14-30-53.868056]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-30-53.868405]: <info> Connect elevated process
+[2024-11-02T14-30-53.877470]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-30-53.877553]: <info> Attempt to create and connect the elevated process: C:\Users\Arezinko\AppData\Local\JetBrains\Installations\ReSharperPlatformVs17_79b94df6\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T14-30-53.877657]: <info> Create elevated process: C:\Users\Arezinko\AppData\Local\JetBrains\Installations\ReSharperPlatformVs17_79b94df6\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T14-30-53.904724]: <info> Elevated process created
+[2024-11-02T14-30-53.948674]: <info> Elevated process bridge, write command: ping
+[2024-11-02T14-30-53.949184]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-30-53.949225]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-30-53.949891]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-30-53.950225]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-30-54.055275]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-30-54.055431]: <info> Client bridge, write answer: ok
+[2024-11-02T14-30-54.183155]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-30-54.183328]: <info> Client bridge, write answer: ok
+[2024-11-02T14-30-54.309118]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-30-54.309284]: <info> Client bridge, write answer: ok
+[2024-11-02T14-30-54.435108]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-30-54.435338]: <info> Client bridge, write answer: ok
+[2024-11-02T14-32-31.537099]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-32-31.537350]: <info> Client bridge, write answer: ok
+[2024-11-02T14-32-31.664003]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-32-31.664237]: <info> Client bridge, write answer: ok
+[2024-11-02T14-32-31.790989]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-32-31.791343]: <info> Client bridge, write answer: ok
+[2024-11-02T14-32-31.793719]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T14-32-31.793797]: <info> Reference count is null - destroy elevated process
+[2024-11-02T14-32-31.793816]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T14-32-32.806345]: <info> Elevated process exited with code: 0
+[2024-11-02T14-32-32.806502]: <info> Elevated process is destroyed
+[2024-11-02T14-32-32.808449]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-40-30.447785]: <info> Running client connection loop
+[2024-11-02T14-40-30.448156]: <info> Read protocol version
+[2024-11-02T14-40-30.448199]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-40-30.448604]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-40-30.477712]: <info> Running client connection loop
+[2024-11-02T14-40-30.478021]: <info> Read protocol version
+[2024-11-02T14-40-30.478059]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-40-30.478643]: <info> Protocol version is arrived: 257
+[2024-11-02T14-40-30.478673]: <info> Write the current protocol version: 257
+[2024-11-02T14-40-30.478683]: <info> Client bridge, write answer: ok
+[2024-11-02T14-40-30.589233]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-40-30.589786]: <info> Connect elevated process
+[2024-11-02T14-40-30.590551]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-40-30.590680]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T14-40-30.590830]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T14-40-30.637790]: <info> Elevated process created
+[2024-11-02T14-40-30.694913]: <info> Elevated process bridge, write command: ping
+[2024-11-02T14-40-30.695697]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-40-30.695737]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-40-30.696274]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-40-30.696870]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-40-30.799108]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-40-30.799383]: <info> Client bridge, write answer: ok
+[2024-11-02T14-40-30.937500]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-40-30.937774]: <info> Client bridge, write answer: ok
+[2024-11-02T14-40-31.073913]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-40-31.074154]: <info> Client bridge, write answer: ok
+[2024-11-02T14-40-31.192208]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-40-31.192495]: <info> Client bridge, write answer: ok
+[2024-11-02T14-55-57.363956]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-55-57.364261]: <info> Client bridge, write answer: ok
+[2024-11-02T14-55-57.487149]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-55-57.487409]: <info> Client bridge, write answer: ok
+[2024-11-02T14-55-57.594902]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-55-57.595245]: <info> Client bridge, write answer: ok
+[2024-11-02T14-55-57.596419]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T14-55-57.596468]: <info> Reference count is null - destroy elevated process
+[2024-11-02T14-55-57.596483]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T14-55-58.608777]: <info> Elevated process exited with code: 0
+[2024-11-02T14-55-58.608921]: <info> Elevated process is destroyed
+[2024-11-02T14-55-58.610680]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-56-00.454281]: <info> Running client connection loop
+[2024-11-02T14-56-00.454683]: <info> Read protocol version
+[2024-11-02T14-56-00.454759]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-56-00.455165]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-56-00.470818]: <info> Running client connection loop
+[2024-11-02T14-56-00.471397]: <info> Read protocol version
+[2024-11-02T14-56-00.471530]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-56-00.472479]: <info> Protocol version is arrived: 257
+[2024-11-02T14-56-00.472562]: <info> Write the current protocol version: 257
+[2024-11-02T14-56-00.472579]: <info> Client bridge, write answer: ok
+[2024-11-02T14-56-00.472703]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-56-00.473168]: <info> Connect elevated process
+[2024-11-02T14-56-00.476045]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-56-00.476150]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T14-56-00.476293]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T14-56-00.639804]: <info> Elevated process created
+[2024-11-02T14-56-00.686844]: <info> Elevated process bridge, write command: ping
+[2024-11-02T14-56-00.687367]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-56-00.687452]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-56-00.687961]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-56-00.688377]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-56-00.791151]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-56-00.791386]: <info> Client bridge, write answer: ok
+[2024-11-02T14-56-00.913961]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-56-00.914272]: <info> Client bridge, write answer: ok
+[2024-11-02T14-56-01.036574]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-56-01.036842]: <info> Client bridge, write answer: ok
+[2024-11-02T14-56-01.158858]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-56-01.159059]: <info> Client bridge, write answer: ok
+[2024-11-02T14-57-19.342708]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-57-19.343171]: <info> Client bridge, write answer: ok
+[2024-11-02T14-57-19.466201]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-57-19.466417]: <info> Client bridge, write answer: ok
+[2024-11-02T14-57-19.573887]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-57-19.574130]: <info> Client bridge, write answer: ok
+[2024-11-02T14-57-19.574890]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T14-57-19.574928]: <info> Reference count is null - destroy elevated process
+[2024-11-02T14-57-19.574944]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T14-57-20.577654]: <info> Elevated process exited with code: 0
+[2024-11-02T14-57-20.577806]: <info> Elevated process is destroyed
+[2024-11-02T14-57-20.579619]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-58-05.042302]: <info> Running client connection loop
+[2024-11-02T14-58-05.042709]: <info> Read protocol version
+[2024-11-02T14-58-05.042797]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-58-05.043197]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T14-58-05.072974]: <info> Running client connection loop
+[2024-11-02T14-58-05.073381]: <info> Read protocol version
+[2024-11-02T14-58-05.073448]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T14-58-05.076166]: <info> Protocol version is arrived: 257
+[2024-11-02T14-58-05.076238]: <info> Write the current protocol version: 257
+[2024-11-02T14-58-05.076253]: <info> Client bridge, write answer: ok
+[2024-11-02T14-58-05.184394]: <info> Client bridge, command received: elevate_process
+[2024-11-02T14-58-05.184800]: <info> Connect elevated process
+[2024-11-02T14-58-05.185639]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T14-58-05.185790]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T14-58-05.185988]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T14-58-05.231738]: <info> Elevated process created
+[2024-11-02T14-58-05.333546]: <info> Elevated process bridge, write command: ping
+[2024-11-02T14-58-05.334616]: <info> Send arguments to the elevated process: 
+[2024-11-02T14-58-05.334690]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T14-58-05.335207]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T14-58-05.335787]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T14-58-05.442642]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-58-05.442876]: <info> Client bridge, write answer: ok
+[2024-11-02T14-58-05.573317]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-58-05.575425]: <info> Client bridge, write answer: ok
+[2024-11-02T14-58-05.699767]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-58-05.700117]: <info> Client bridge, write answer: ok
+[2024-11-02T14-58-05.815427]: <info> Client bridge, command received: get_dirs
+[2024-11-02T14-58-05.815667]: <info> Client bridge, write answer: ok
+[2024-11-02T15-09-25.582459]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T15-09-25.582540]: <info> Reference count is null - destroy elevated process
+[2024-11-02T15-09-25.582565]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T15-09-26.591133]: <info> Elevated process exited with code: 0
+[2024-11-02T15-09-26.591286]: <info> Elevated process is destroyed
+[2024-11-02T15-09-26.594456]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-09-51.026331]: <info> Running client connection loop
+[2024-11-02T15-09-51.026872]: <info> Read protocol version
+[2024-11-02T15-09-51.026990]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-09-51.027572]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-09-51.082557]: <info> Running client connection loop
+[2024-11-02T15-09-51.083235]: <info> Read protocol version
+[2024-11-02T15-09-51.083348]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-09-51.102962]: <info> Protocol version is arrived: 257
+[2024-11-02T15-09-51.103224]: <info> Write the current protocol version: 257
+[2024-11-02T15-09-51.103254]: <info> Client bridge, write answer: ok
+[2024-11-02T15-09-51.104091]: <info> Client bridge, command received: elevate_process
+[2024-11-02T15-09-51.105498]: <info> Connect elevated process
+[2024-11-02T15-09-51.106437]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T15-09-51.106607]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T15-09-51.106797]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T15-09-51.602487]: <info> Elevated process created
+[2024-11-02T15-09-51.681663]: <info> Elevated process bridge, write command: ping
+[2024-11-02T15-09-51.682940]: <info> Send arguments to the elevated process: 
+[2024-11-02T15-09-51.683038]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T15-09-51.684869]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T15-09-51.685874]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T15-09-51.786497]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-09-51.786963]: <info> Client bridge, write answer: ok
+[2024-11-02T15-09-51.919312]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-09-51.919770]: <info> Client bridge, write answer: ok
+[2024-11-02T15-09-52.177775]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-09-52.178211]: <info> Client bridge, write answer: ok
+[2024-11-02T15-09-52.322594]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-09-52.323040]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-10.446758]: <info> Running client connection loop
+[2024-11-02T15-10-10.447295]: <info> Read protocol version
+[2024-11-02T15-10-10.447398]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-10-10.448210]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-10-10.485915]: <info> Running client connection loop
+[2024-11-02T15-10-10.486712]: <info> Read protocol version
+[2024-11-02T15-10-10.486817]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-10-10.533134]: <info> Protocol version is arrived: 257
+[2024-11-02T15-10-10.533216]: <info> Write the current protocol version: 257
+[2024-11-02T15-10-10.533243]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-10.660881]: <info> Client bridge, command received: elevate_process
+[2024-11-02T15-10-10.661898]: <info> Connect elevated process
+[2024-11-02T15-10-10.662747]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T15-10-10.662859]: <info> Connecting to the existing elevated process C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, reference count: 1
+[2024-11-02T15-10-10.662894]: <info> Send arguments to the elevated process: 
+[2024-11-02T15-10-10.662919]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T15-10-10.663186]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T15-10-10.663885]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T15-10-10.765529]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-10-10.766056]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-10.924349]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-10-10.924804]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-11.085256]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-10-11.085675]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-11.214252]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-10-11.214672]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-15.060806]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-10-15.061260]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-15.215012]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-10-15.215510]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-15.331871]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-10-15.332321]: <info> Client bridge, write answer: ok
+[2024-11-02T15-10-15.334841]: <info> Disconnect elevated process, reference count: 1
+[2024-11-02T15-10-15.335193]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-11-05.115261]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-11-05.115594]: <info> Client bridge, write answer: ok
+[2024-11-02T15-11-05.243267]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-11-05.243695]: <info> Client bridge, write answer: ok
+[2024-11-02T15-11-05.364599]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-11-05.364972]: <info> Client bridge, write answer: ok
+[2024-11-02T15-11-05.366343]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T15-11-05.366412]: <info> Reference count is null - destroy elevated process
+[2024-11-02T15-11-05.366444]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T15-11-06.368660]: <info> Elevated process exited with code: 0
+[2024-11-02T15-11-06.368823]: <info> Elevated process is destroyed
+[2024-11-02T15-11-06.370918]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-12-04.338481]: <info> Running client connection loop
+[2024-11-02T15-12-04.339467]: <info> Read protocol version
+[2024-11-02T15-12-04.339609]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-12-04.340298]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-12-04.382374]: <info> Running client connection loop
+[2024-11-02T15-12-04.383137]: <info> Read protocol version
+[2024-11-02T15-12-04.383261]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-12-04.384772]: <info> Protocol version is arrived: 257
+[2024-11-02T15-12-04.384867]: <info> Write the current protocol version: 257
+[2024-11-02T15-12-04.384889]: <info> Client bridge, write answer: ok
+[2024-11-02T15-12-04.491468]: <info> Client bridge, command received: elevate_process
+[2024-11-02T15-12-04.492437]: <info> Connect elevated process
+[2024-11-02T15-12-04.493357]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T15-12-04.493507]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T15-12-04.493701]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T15-12-04.559193]: <info> Elevated process created
+[2024-11-02T15-12-04.731375]: <info> Elevated process bridge, write command: ping
+[2024-11-02T15-12-04.732309]: <info> Send arguments to the elevated process: 
+[2024-11-02T15-12-04.732390]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T15-12-04.743827]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T15-12-04.744836]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T15-12-04.850000]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-12-04.850558]: <info> Client bridge, write answer: ok
+[2024-11-02T15-12-04.990769]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-12-04.991197]: <info> Client bridge, write answer: ok
+[2024-11-02T15-12-05.136156]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-12-05.136590]: <info> Client bridge, write answer: ok
+[2024-11-02T15-12-05.258245]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-12-05.258709]: <info> Client bridge, write answer: ok
+[2024-11-02T15-16-11.862888]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-16-11.863296]: <info> Client bridge, write answer: ok
+[2024-11-02T15-16-11.991087]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-16-11.991449]: <info> Client bridge, write answer: ok
+[2024-11-02T15-16-12.102133]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-16-12.102636]: <info> Client bridge, write answer: ok
+[2024-11-02T15-16-12.104294]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T15-16-12.104363]: <info> Reference count is null - destroy elevated process
+[2024-11-02T15-16-12.104390]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T15-16-13.112035]: <info> Elevated process exited with code: 0
+[2024-11-02T15-16-13.112177]: <info> Elevated process is destroyed
+[2024-11-02T15-16-13.114154]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-16-59.457725]: <info> Running client connection loop
+[2024-11-02T15-16-59.465326]: <info> Read protocol version
+[2024-11-02T15-16-59.465488]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-16-59.466137]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-16-59.499395]: <info> Running client connection loop
+[2024-11-02T15-16-59.499827]: <info> Read protocol version
+[2024-11-02T15-16-59.499876]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-16-59.500806]: <info> Protocol version is arrived: 257
+[2024-11-02T15-16-59.500874]: <info> Write the current protocol version: 257
+[2024-11-02T15-16-59.500897]: <info> Client bridge, write answer: ok
+[2024-11-02T15-16-59.625589]: <info> Client bridge, command received: elevate_process
+[2024-11-02T15-16-59.626567]: <info> Connect elevated process
+[2024-11-02T15-16-59.627317]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T15-16-59.627445]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T15-16-59.627616]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T15-16-59.685921]: <info> Elevated process created
+[2024-11-02T15-16-59.801211]: <info> Elevated process bridge, write command: ping
+[2024-11-02T15-16-59.802163]: <info> Send arguments to the elevated process: 
+[2024-11-02T15-16-59.802227]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T15-16-59.813248]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T15-16-59.813991]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T15-17-00.460080]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-17-00.460516]: <info> Client bridge, write answer: ok
+[2024-11-02T15-17-00.639286]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-17-00.639725]: <info> Client bridge, write answer: ok
+[2024-11-02T15-17-00.780162]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-17-00.780648]: <info> Client bridge, write answer: ok
+[2024-11-02T15-17-00.920568]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-17-00.921012]: <info> Client bridge, write answer: ok
+[2024-11-02T15-28-39.920459]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-28-39.920971]: <info> Client bridge, write answer: ok
+[2024-11-02T15-28-40.046132]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-28-40.046316]: <info> Client bridge, write answer: ok
+[2024-11-02T15-28-40.153108]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-28-40.153300]: <info> Client bridge, write answer: ok
+[2024-11-02T15-28-40.154399]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T15-28-40.154437]: <info> Reference count is null - destroy elevated process
+[2024-11-02T15-28-40.154447]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T15-28-41.154922]: <info> Elevated process exited with code: 0
+[2024-11-02T15-28-41.155047]: <info> Elevated process is destroyed
+[2024-11-02T15-28-41.157270]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-28-46.505862]: <info> Running client connection loop
+[2024-11-02T15-28-46.507137]: <info> Read protocol version
+[2024-11-02T15-28-46.507404]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-28-46.508199]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-28-46.520699]: <info> Running client connection loop
+[2024-11-02T15-28-46.521536]: <info> Read protocol version
+[2024-11-02T15-28-46.521698]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-28-46.525509]: <info> Protocol version is arrived: 257
+[2024-11-02T15-28-46.525591]: <info> Write the current protocol version: 257
+[2024-11-02T15-28-46.525606]: <info> Client bridge, write answer: ok
+[2024-11-02T15-28-46.525788]: <info> Client bridge, command received: elevate_process
+[2024-11-02T15-28-46.526157]: <info> Connect elevated process
+[2024-11-02T15-28-46.528897]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T15-28-46.529052]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T15-28-46.529201]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T15-28-46.579459]: <info> Elevated process created
+[2024-11-02T15-28-46.633981]: <info> Elevated process bridge, write command: ping
+[2024-11-02T15-28-46.635084]: <info> Send arguments to the elevated process: 
+[2024-11-02T15-28-46.635154]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T15-28-46.635829]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T15-28-46.636314]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T15-28-47.392271]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-28-47.392519]: <info> Client bridge, write answer: ok
+[2024-11-02T15-28-47.533544]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-28-47.533730]: <info> Client bridge, write answer: ok
+[2024-11-02T15-28-47.657824]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-28-47.658004]: <info> Client bridge, write answer: ok
+[2024-11-02T15-28-47.785060]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-28-47.785419]: <info> Client bridge, write answer: ok
+[2024-11-02T15-34-46.988520]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-34-46.988823]: <info> Client bridge, write answer: ok
+[2024-11-02T15-34-47.112421]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-34-47.112673]: <info> Client bridge, write answer: ok
+[2024-11-02T15-34-47.220216]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-34-47.220403]: <info> Client bridge, write answer: ok
+[2024-11-02T15-34-47.221294]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T15-34-47.221361]: <info> Reference count is null - destroy elevated process
+[2024-11-02T15-34-47.221374]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T15-34-48.227909]: <info> Elevated process exited with code: 0
+[2024-11-02T15-34-48.228092]: <info> Elevated process is destroyed
+[2024-11-02T15-34-48.229802]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-34-48.352206]: <info> Running client connection loop
+[2024-11-02T15-34-48.352811]: <info> Read protocol version
+[2024-11-02T15-34-48.352914]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-34-48.353306]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T15-34-48.369275]: <info> Running client connection loop
+[2024-11-02T15-34-48.369795]: <info> Read protocol version
+[2024-11-02T15-34-48.369912]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T15-34-48.370502]: <info> Protocol version is arrived: 257
+[2024-11-02T15-34-48.370571]: <info> Write the current protocol version: 257
+[2024-11-02T15-34-48.370584]: <info> Client bridge, write answer: ok
+[2024-11-02T15-34-48.370697]: <info> Client bridge, command received: elevate_process
+[2024-11-02T15-34-48.371070]: <info> Connect elevated process
+[2024-11-02T15-34-48.371833]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T15-34-48.371966]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T15-34-48.372148]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T15-34-48.525758]: <info> Elevated process created
+[2024-11-02T15-34-48.590668]: <info> Elevated process bridge, write command: ping
+[2024-11-02T15-34-48.591192]: <info> Send arguments to the elevated process: 
+[2024-11-02T15-34-48.591278]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T15-34-48.591747]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T15-34-48.592297]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T15-34-48.708630]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-34-48.708912]: <info> Client bridge, write answer: ok
+[2024-11-02T15-34-48.830519]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-34-48.830739]: <info> Client bridge, write answer: ok
+[2024-11-02T15-34-48.954167]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-34-48.954412]: <info> Client bridge, write answer: ok
+[2024-11-02T15-34-49.079633]: <info> Client bridge, command received: get_dirs
+[2024-11-02T15-34-49.079923]: <info> Client bridge, write answer: ok
+[2024-11-02T16-08-50.081984]: <info> Running client connection loop
+[2024-11-02T16-08-50.082645]: <info> Read protocol version
+[2024-11-02T16-08-50.082727]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-08-50.083293]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-08-50.114931]: <info> Running client connection loop
+[2024-11-02T16-08-50.115502]: <info> Read protocol version
+[2024-11-02T16-08-50.115572]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-08-50.119522]: <info> Protocol version is arrived: 257
+[2024-11-02T16-08-50.119627]: <info> Write the current protocol version: 257
+[2024-11-02T16-08-50.119643]: <info> Client bridge, write answer: ok
+[2024-11-02T16-08-50.223941]: <info> Client bridge, command received: elevate_process
+[2024-11-02T16-08-50.224655]: <info> Connect elevated process
+[2024-11-02T16-08-50.226761]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T16-08-50.226947]: <info> Connecting to the existing elevated process C:\Users\Arezinko\.gradle\caches\8.8\transforms\4047dea5330c930b1b5593796acba417\transformed\riderRD-2024.2\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, reference count: 1
+[2024-11-02T16-08-50.226975]: <info> Send arguments to the elevated process: 
+[2024-11-02T16-08-50.226995]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T16-08-50.229318]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T16-08-50.229853]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T16-08-50.333001]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-08-50.333356]: <info> Client bridge, write answer: ok
+[2024-11-02T16-08-50.472796]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-08-50.473127]: <info> Client bridge, write answer: ok
+[2024-11-02T16-08-50.596644]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-08-50.596967]: <info> Client bridge, write answer: ok
+[2024-11-02T16-08-50.720949]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-08-50.721266]: <info> Client bridge, write answer: ok
+[2024-11-02T16-11-29.861877]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-11-29.862124]: <info> Client bridge, write answer: ok
+[2024-11-02T16-11-29.989102]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-11-29.989549]: <info> Client bridge, write answer: ok
+[2024-11-02T16-11-30.098789]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-11-30.099292]: <info> Client bridge, write answer: ok
+[2024-11-02T16-11-30.100565]: <info> Disconnect elevated process, reference count: 1
+[2024-11-02T16-11-30.100754]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-19-15.802802]: <info> Running client connection loop
+[2024-11-02T16-19-15.803804]: <info> Read protocol version
+[2024-11-02T16-19-15.803986]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-19-15.804662]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-19-15.838736]: <info> Running client connection loop
+[2024-11-02T16-19-15.839219]: <info> Read protocol version
+[2024-11-02T16-19-15.839268]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-19-15.839888]: <info> Protocol version is arrived: 257
+[2024-11-02T16-19-15.839946]: <info> Write the current protocol version: 257
+[2024-11-02T16-19-15.839957]: <info> Client bridge, write answer: ok
+[2024-11-02T16-19-15.955889]: <info> Client bridge, command received: elevate_process
+[2024-11-02T16-19-15.956481]: <info> Connect elevated process
+[2024-11-02T16-19-15.958484]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T16-19-15.958587]: <info> Connecting to the existing elevated process C:\Users\Arezinko\.gradle\caches\8.8\transforms\4047dea5330c930b1b5593796acba417\transformed\riderRD-2024.2\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, reference count: 1
+[2024-11-02T16-19-15.958599]: <info> Send arguments to the elevated process: 
+[2024-11-02T16-19-15.958613]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T16-19-15.958775]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T16-19-15.959084]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T16-19-16.064942]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-19-16.065288]: <info> Client bridge, write answer: ok
+[2024-11-02T16-19-16.220051]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-19-16.220364]: <info> Client bridge, write answer: ok
+[2024-11-02T16-19-16.344972]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-19-16.345285]: <info> Client bridge, write answer: ok
+[2024-11-02T16-19-16.486917]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-19-16.487214]: <info> Client bridge, write answer: ok
+[2024-11-02T16-20-20.357256]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-20-20.357599]: <info> Client bridge, write answer: ok
+[2024-11-02T16-20-20.482326]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-20-20.482765]: <info> Client bridge, write answer: ok
+[2024-11-02T16-20-20.593306]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-20-20.593621]: <info> Client bridge, write answer: ok
+[2024-11-02T16-20-20.594672]: <info> Disconnect elevated process, reference count: 1
+[2024-11-02T16-20-20.594862]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-23-02.816472]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-02.816688]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-02.937842]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-02.938104]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-03.060538]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-03.060766]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-03.061500]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T16-23-03.061545]: <info> Reference count is null - destroy elevated process
+[2024-11-02T16-23-03.061559]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T16-23-04.064370]: <info> Elevated process exited with code: 0
+[2024-11-02T16-23-04.064506]: <info> Elevated process is destroyed
+[2024-11-02T16-23-04.067420]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-23-04.492240]: <info> Running client connection loop
+[2024-11-02T16-23-04.493334]: <info> Read protocol version
+[2024-11-02T16-23-04.493463]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-23-04.493970]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-23-04.511726]: <info> Running client connection loop
+[2024-11-02T16-23-04.512151]: <info> Read protocol version
+[2024-11-02T16-23-04.512207]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-23-04.513335]: <info> Protocol version is arrived: 257
+[2024-11-02T16-23-04.513461]: <info> Write the current protocol version: 257
+[2024-11-02T16-23-04.513479]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-04.513647]: <info> Client bridge, command received: elevate_process
+[2024-11-02T16-23-04.514082]: <info> Connect elevated process
+[2024-11-02T16-23-04.517410]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T16-23-04.517563]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T16-23-04.517735]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T16-23-04.691833]: <info> Elevated process created
+[2024-11-02T16-23-04.747277]: <info> Elevated process bridge, write command: ping
+[2024-11-02T16-23-04.747730]: <info> Send arguments to the elevated process: 
+[2024-11-02T16-23-04.747742]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T16-23-04.748105]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T16-23-04.748374]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T16-23-04.848187]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-04.848376]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-04.970624]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-04.970941]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-05.092863]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-05.093044]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-05.215696]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-05.215885]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-42.365691]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-42.365928]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-42.485924]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-42.486113]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-42.593494]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-42.593778]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-42.594727]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T16-23-42.594785]: <info> Reference count is null - destroy elevated process
+[2024-11-02T16-23-42.594801]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T16-23-43.597342]: <info> Elevated process exited with code: 0
+[2024-11-02T16-23-43.597456]: <info> Elevated process is destroyed
+[2024-11-02T16-23-43.599634]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-23-46.660538]: <info> Running client connection loop
+[2024-11-02T16-23-46.661172]: <info> Read protocol version
+[2024-11-02T16-23-46.661303]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-23-46.661730]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-23-46.676936]: <info> Running client connection loop
+[2024-11-02T16-23-46.677628]: <info> Read protocol version
+[2024-11-02T16-23-46.677749]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-23-46.678551]: <info> Protocol version is arrived: 257
+[2024-11-02T16-23-46.678628]: <info> Write the current protocol version: 257
+[2024-11-02T16-23-46.678641]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-46.678767]: <info> Client bridge, command received: elevate_process
+[2024-11-02T16-23-46.679195]: <info> Connect elevated process
+[2024-11-02T16-23-46.679677]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T16-23-46.679785]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T16-23-46.679926]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T16-23-46.714145]: <info> Elevated process created
+[2024-11-02T16-23-46.766067]: <info> Elevated process bridge, write command: ping
+[2024-11-02T16-23-46.766619]: <info> Send arguments to the elevated process: 
+[2024-11-02T16-23-46.766659]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T16-23-46.767043]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T16-23-46.767413]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T16-23-46.875773]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-46.875969]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-47.105944]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-47.106154]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-47.228757]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-47.229000]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-47.351490]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-47.351730]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-51.241942]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-51.242099]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-51.367228]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-51.367408]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-51.475440]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-23-51.475661]: <info> Client bridge, write answer: ok
+[2024-11-02T16-23-51.476878]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T16-23-51.476918]: <info> Reference count is null - destroy elevated process
+[2024-11-02T16-23-51.476934]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T16-23-52.489104]: <info> Elevated process exited with code: 0
+[2024-11-02T16-23-52.489215]: <info> Elevated process is destroyed
+[2024-11-02T16-23-52.490681]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-24-34.909661]: <info> Running client connection loop
+[2024-11-02T16-24-34.910081]: <info> Read protocol version
+[2024-11-02T16-24-34.910165]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-24-34.910563]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-24-34.947619]: <info> Running client connection loop
+[2024-11-02T16-24-34.948179]: <info> Read protocol version
+[2024-11-02T16-24-34.948291]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-24-34.949046]: <info> Protocol version is arrived: 257
+[2024-11-02T16-24-34.949097]: <info> Write the current protocol version: 257
+[2024-11-02T16-24-34.949112]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-35.058730]: <info> Client bridge, command received: elevate_process
+[2024-11-02T16-24-35.059169]: <info> Connect elevated process
+[2024-11-02T16-24-35.059751]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T16-24-35.059843]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T16-24-35.059960]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T16-24-35.092592]: <info> Elevated process created
+[2024-11-02T16-24-35.138963]: <info> Elevated process bridge, write command: ping
+[2024-11-02T16-24-35.139656]: <info> Send arguments to the elevated process: 
+[2024-11-02T16-24-35.139722]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T16-24-35.140113]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T16-24-35.140473]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T16-24-35.248058]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-35.248295]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-35.376033]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-35.376245]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-35.488146]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-35.488347]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-35.600053]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-35.600282]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-46.733235]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-46.733433]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-46.853086]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-46.853490]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-46.954803]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-46.955020]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-46.956129]: <info> Disconnect elevated process, reference count: 0
+[2024-11-02T16-24-46.956197]: <info> Reference count is null - destroy elevated process
+[2024-11-02T16-24-46.956213]: <info> Elevated process bridge, write command: terminate
+[2024-11-02T16-24-47.960130]: <info> Elevated process exited with code: 0
+[2024-11-02T16-24-47.960334]: <info> Elevated process is destroyed
+[2024-11-02T16-24-47.962204]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-24-51.672648]: <info> Running client connection loop
+[2024-11-02T16-24-51.673129]: <info> Read protocol version
+[2024-11-02T16-24-51.673213]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-24-51.673664]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T16-24-51.688663]: <info> Running client connection loop
+[2024-11-02T16-24-51.689042]: <info> Read protocol version
+[2024-11-02T16-24-51.689126]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T16-24-51.689688]: <info> Protocol version is arrived: 257
+[2024-11-02T16-24-51.689757]: <info> Write the current protocol version: 257
+[2024-11-02T16-24-51.689770]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-51.689948]: <info> Client bridge, command received: elevate_process
+[2024-11-02T16-24-51.690356]: <info> Connect elevated process
+[2024-11-02T16-24-51.690705]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T16-24-51.690774]: <info> Attempt to create and connect the elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe, cmd: 
+[2024-11-02T16-24-51.690863]: <info> Create elevated process: C:\Program Files\JetBrains\JetBrains Rider 2024.2.7\plugins\dotCommon\DotFiles\windows-x64\JetBrains.Dpa.Collector.exe
+[2024-11-02T16-24-51.717858]: <info> Elevated process created
+[2024-11-02T16-24-51.765033]: <info> Elevated process bridge, write command: ping
+[2024-11-02T16-24-51.765618]: <info> Send arguments to the elevated process: 
+[2024-11-02T16-24-51.765638]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T16-24-51.765967]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T16-24-51.766273]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T16-24-51.863744]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-51.863974]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-51.976370]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-51.976636]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-52.104395]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-52.104638]: <info> Client bridge, write answer: ok
+[2024-11-02T16-24-52.216348]: <info> Client bridge, command received: get_dirs
+[2024-11-02T16-24-52.216595]: <info> Client bridge, write answer: ok
+[2024-11-02T17-03-11.789841]: <info> Running client connection loop
+[2024-11-02T17-03-11.790972]: <info> Read protocol version
+[2024-11-02T17-03-11.791100]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T17-03-11.792018]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T17-03-12.029615]: <info> Running client connection loop
+[2024-11-02T17-03-12.030339]: <info> Read protocol version
+[2024-11-02T17-03-12.030424]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T17-03-12.030905]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T17-03-12.068743]: <info> Running client connection loop
+[2024-11-02T17-03-12.069262]: <info> Read protocol version
+[2024-11-02T17-03-12.069306]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T17-03-12.069665]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T17-03-12.119230]: <info> Running client connection loop
+[2024-11-02T17-03-12.119819]: <info> Read protocol version
+[2024-11-02T17-03-12.119899]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T17-03-12.120937]: <info> Protocol version is arrived: 257
+[2024-11-02T17-03-12.120985]: <info> Write the current protocol version: 257
+[2024-11-02T17-03-12.121007]: <info> Client bridge, write answer: ok
+[2024-11-02T17-03-12.227063]: <info> Client bridge, command received: elevate_process
+[2024-11-02T17-03-12.228023]: <info> Connect elevated process
+[2024-11-02T17-03-12.230870]: <info> Compatibility version is retrieved from the image: 16
+[2024-11-02T17-03-12.231036]: <info> Connecting to the existing elevated process C:\Users\Arezinko\AppData\Local\JetBrains\Installations\ReSharperPlatformVs17_79b94df6GitHighlighter_000\windows-x64\JetBrains.Dpa.Collector.exe, reference count: 1
+[2024-11-02T17-03-12.231067]: <info> Send arguments to the elevated process: -s 8 
+[2024-11-02T17-03-12.231087]: <info> Elevated process bridge, write command: arguments
+[2024-11-02T17-03-12.231615]: <info> Elevated process bridge, write command: pipe_name
+[2024-11-02T17-03-12.232329]: <info> Client bridge, write answer: elevation_ok
+[2024-11-02T17-03-12.339181]: <info> Client bridge, command received: get_dirs
+[2024-11-02T17-03-12.339691]: <info> Client bridge, write answer: ok
+[2024-11-02T17-03-12.482082]: <info> Client bridge, command received: get_dirs
+[2024-11-02T17-03-12.482461]: <info> Client bridge, write answer: ok
+[2024-11-02T17-03-12.623134]: <info> Client bridge, command received: get_dirs
+[2024-11-02T17-03-12.623492]: <info> Client bridge, write answer: ok
+[2024-11-02T17-03-12.749193]: <info> Client bridge, command received: get_dirs
+[2024-11-02T17-03-12.749610]: <info> Client bridge, write answer: ok
+[2024-11-02T17-03-14.888550]: <info> Running client connection loop
+[2024-11-02T17-03-14.889270]: <info> Read protocol version
+[2024-11-02T17-03-14.889385]: <info> Listening: \\.\pipe\jetbrains.profiler.etw.host.v16
+[2024-11-02T17-03-14.889976]: <error> The pipe has been ended [system:109 at Z:\BuildAgent\work\40149736ac453055\dotnet\Packages\JetBrains.boost.include.1.80.0.12\build\native\include\boost/asio/detail/win_iocp_handle_read_op.hpp:84:5 in function 'do_complete']
+[2024-11-02T17-05-41.505968]: <info> Client bridge, command received: get_dirs
+[2024-11-02T17-05-41.506360]: <info> Client bridge, write answer: ok
