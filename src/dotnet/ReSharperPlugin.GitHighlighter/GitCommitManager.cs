@@ -2,10 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using JetBrains.Application.Components;
+using System.Linq;
 using JetBrains.Application.Settings;
 using JetBrains.Application.Threading;
-using JetBrains.DataFlow;
 using JetBrains.Lifetimes;
 using JetBrains.ProjectModel;
 using JetBrains.ProjectModel.DataContext;
@@ -22,8 +21,7 @@ namespace ReSharperPlugin.GitHighlighter
         private readonly IShellLocks _shellLocks;
         private readonly Lifetime _lifetime;
         private readonly string _gitRepositoryPath;
-        private FileSystemWatcher _gitWatcher;
-        private IList<CommitInfo> _recentCommits;
+        private IList<CommitInfo> _recentCommits = new List<CommitInfo>();
         private readonly ILogger _logger;
 
         public GitCommitManager(
@@ -42,9 +40,8 @@ namespace ReSharperPlugin.GitHighlighter
             _gitRepositoryPath = FindGitRepositoryPath();
             if (_gitRepositoryPath != null)
             {
-                LoadRecentCommits();
-                SetupGitWatcher();
                 SubscribeToSettingsChanges();
+                LoadRecentCommits();
             }
         }
 
@@ -64,12 +61,28 @@ namespace ReSharperPlugin.GitHighlighter
 
         private void LoadRecentCommits()
         {
-            var settings = _settingsStore.BindToContextLive(
-                _lifetime, ContextRange.Smart(_solution.ToDataContext()));
+            _shellLocks.Queue(_lifetime, "LoadRecentCommits", () =>
+            {
+                try
+                {
+                    var settings = _settingsStore.BindToContextLive(
+                        _lifetime, ContextRange.Smart(_solution.ToDataContext()));
 
-            var numberOfCommits = settings.GetValue((OptionsSettings s) => s.NumberOfCommits);
+                    var numberOfCommits = settings.GetValue((OptionsSettings s) => s.NumberOfCommits);
 
-            _recentCommits = GetRecentCommits(numberOfCommits);
+                    var commits = GetRecentCommits(numberOfCommits);
+
+                    _shellLocks.ExecuteOrQueue(_lifetime, "UpdateRecentCommits", () =>
+                    {
+                        _recentCommits = commits;
+                        InvalidateDaemon();
+                    });
+                }
+                catch (Exception ex)
+                {
+                    _logger.Error(ex, "Error loading recent commits.");
+                }
+            });
         }
 
         private IList<CommitInfo> GetRecentCommits(int numberOfCommits)
@@ -77,7 +90,7 @@ namespace ReSharperPlugin.GitHighlighter
             var commitList = new List<CommitInfo>();
 
             var gitLogOutput = ExecuteGitCommand($"log -n {numberOfCommits} --pretty=format:%H|%s");
-            var commits = gitLogOutput.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            var commits = gitLogOutput.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var commit in commits)
             {
@@ -88,15 +101,24 @@ namespace ReSharperPlugin.GitHighlighter
                     var message = parts[1];
 
                     var filesChangedOutput = ExecuteGitCommand($"diff-tree --no-commit-id --name-only -r {hash}");
-                    var filesChanged = filesChangedOutput.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                    var filesChanged = filesChangedOutput
+                        .Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries)
+                        .Where(file => file.EndsWith(".cs", StringComparison.OrdinalIgnoreCase))
+                        .ToArray();
+
+                    // Skip commits without .cs files
+                    if (filesChanged.Length == 0)
+                    {
+                        continue;
+                    }
 
                     commitList.Add(new CommitInfo
                     {
                         CommitMessage = message,
                         FilesChanged = filesChanged
                     });
-                    
-                    _logger.Info($"Commit: {message}, Files: {string.Join(", ", filesChanged)}");
+
+                    _logger.Info($"Commit: {message}, .cs Files: {string.Join(", ", filesChanged)}");
                 }
             }
 
@@ -123,6 +145,7 @@ namespace ReSharperPlugin.GitHighlighter
 
                 if (process.ExitCode != 0)
                 {
+                    _logger.Error($"Git command failed: {error}");
                     throw new InvalidOperationException($"Git command failed: {error}");
                 }
 
@@ -130,56 +153,44 @@ namespace ReSharperPlugin.GitHighlighter
             }
         }
 
-        private void SetupGitWatcher()
-        {
-            _gitWatcher = new FileSystemWatcher(_gitRepositoryPath, ".git")
-            {
-                IncludeSubdirectories = true,
-                NotifyFilter = NotifyFilters.DirectoryName | NotifyFilters.FileName | NotifyFilters.LastWrite
-            };
-
-            _gitWatcher.Changed += OnGitRepositoryChanged;
-            _gitWatcher.Created += OnGitRepositoryChanged;
-            _gitWatcher.Deleted += OnGitRepositoryChanged;
-            _gitWatcher.Renamed += OnGitRepositoryChanged;
-
-            _gitWatcher.EnableRaisingEvents = true;
-        }
-
-        private void OnGitRepositoryChanged(object sender, FileSystemEventArgs e)
-        {
-            _shellLocks.Queue(_lifetime, "ReloadCommits", () =>
-            {
-                LoadRecentCommits();
-                InvalidateDaemon();
-            });
-        }
-
         private void SubscribeToSettingsChanges()
         {
             var settingsStore = _settingsStore.BindToContextLive(
                 _lifetime, ContextRange.Smart(_solution.ToDataContext()));
 
-            var entry = _settingsStore.Schema.GetScalarEntry((OptionsSettings s) => s.NumberOfCommits);
-
-            settingsStore.Changed.Advise(_lifetime, entry =>
+            settingsStore.Changed.Advise(_lifetime, _ =>
             {
                 LoadRecentCommits();
-                InvalidateDaemon();
             });
         }
 
         private void InvalidateDaemon()
         {
-            var daemon = _solution.GetComponent<IDaemon>();
-            daemon.Invalidate();
+            _shellLocks.ExecuteOrQueue(_lifetime, "InvalidateDaemon", () =>
+            {
+                var daemon = _solution.GetComponent<IDaemon>();
+                daemon.Invalidate();
+            });
         }
 
-        public IList<CommitInfo> RecentCommits => _recentCommits;
+        public IList<CommitInfo> RecentCommits
+        {
+            get
+            {
+                IList<CommitInfo> commits = null;
+                _shellLocks.ExecuteWithReadLock(() =>
+                {
+                    commits = _recentCommits;
+                });
+                return commits;
+            }
+        }
+
+        public FileSystemPath GitRepositoryPath => FileSystemPath.Parse(_gitRepositoryPath);
 
         public void Dispose()
         {
-            _gitWatcher?.Dispose();
+            // No resources to dispose
         }
     }
 

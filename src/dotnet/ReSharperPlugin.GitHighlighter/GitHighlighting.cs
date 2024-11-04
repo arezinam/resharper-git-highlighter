@@ -3,7 +3,7 @@ using JetBrains.ReSharper.Feature.Services.Daemon;
 
 namespace ReSharperPlugin.GitHighlighter
 {
-    [StaticSeverityHighlighting(Severity.INFO, typeof(HighlightingGroupIds.GutterMarks))]
+    [StaticSeverityHighlighting(Severity.WARNING, typeof(HighlightingGroupIds.GutterMarks), OverlapResolve = OverlapResolveKind.NONE)]
     public class GitHighlighting : IHighlighting
     {
         private readonly string _toolTip;
