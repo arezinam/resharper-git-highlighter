@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using JetBrains.Application.Settings;
 using JetBrains.Application.Threading;
 using JetBrains.Lifetimes;
@@ -23,6 +24,7 @@ namespace ReSharperPlugin.GitHighlighter
         private readonly string _gitRepositoryPath;
         private IList<CommitInfo> _recentCommits = new List<CommitInfo>();
         private readonly ILogger _logger;
+        private FileSystemWatcher _gitWatcher;
 
         public GitCommitManager(
             ISolution solution,
@@ -40,6 +42,7 @@ namespace ReSharperPlugin.GitHighlighter
             _gitRepositoryPath = FindGitRepositoryPath();
             if (_gitRepositoryPath != null)
             {
+                SetupGitWatcher();
                 SubscribeToSettingsChanges();
                 LoadRecentCommits();
             }
@@ -59,30 +62,29 @@ namespace ReSharperPlugin.GitHighlighter
             return null;
         }
 
-        private void LoadRecentCommits()
+        private async void LoadRecentCommits()
         {
-            _shellLocks.Queue(_lifetime, "LoadRecentCommits", () =>
+            try
             {
-                try
+                var commits = await Task.Run(() =>
                 {
                     var settings = _settingsStore.BindToContextLive(
                         _lifetime, ContextRange.Smart(_solution.ToDataContext()));
 
                     var numberOfCommits = settings.GetValue((OptionsSettings s) => s.NumberOfCommits);
+                    return GetRecentCommits(numberOfCommits);
+                });
 
-                    var commits = GetRecentCommits(numberOfCommits);
-
-                    _shellLocks.ExecuteOrQueue(_lifetime, "UpdateRecentCommits", () =>
-                    {
-                        _recentCommits = commits;
-                        InvalidateDaemon();
-                    });
-                }
-                catch (Exception ex)
+                _shellLocks.Queue(_lifetime, "UpdateRecentCommits", () =>
                 {
-                    _logger.Error(ex, "Error loading recent commits.");
-                }
-            });
+                    _recentCommits = commits;
+                    InvalidateDaemon();
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, "Error loading recent commits.");
+            }
         }
 
         private IList<CommitInfo> GetRecentCommits(int numberOfCommits)
@@ -106,7 +108,6 @@ namespace ReSharperPlugin.GitHighlighter
                         .Where(file => file.EndsWith(".cs", StringComparison.OrdinalIgnoreCase))
                         .ToArray();
 
-                    // Skip commits without .cs files
                     if (filesChanged.Length == 0)
                     {
                         continue;
@@ -153,6 +154,30 @@ namespace ReSharperPlugin.GitHighlighter
             }
         }
 
+        private void SetupGitWatcher()
+        {
+            var gitDirPath = Path.Combine(_gitRepositoryPath, ".git");
+
+            _gitWatcher = new FileSystemWatcher(gitDirPath)
+            {
+                NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName,
+                IncludeSubdirectories = true
+            };
+
+            _gitWatcher.Changed += OnGitRepositoryChanged;
+            _gitWatcher.Created += OnGitRepositoryChanged;
+            _gitWatcher.Deleted += OnGitRepositoryChanged;
+            _gitWatcher.Renamed += OnGitRepositoryChanged;
+
+            _gitWatcher.EnableRaisingEvents = true;
+        }
+
+        private void OnGitRepositoryChanged(object sender, FileSystemEventArgs e)
+        {
+            // Reload recent commits when a change is detected
+            LoadRecentCommits();
+        }
+
         private void SubscribeToSettingsChanges()
         {
             var settingsStore = _settingsStore.BindToContextLive(
@@ -190,7 +215,12 @@ namespace ReSharperPlugin.GitHighlighter
 
         public void Dispose()
         {
-            // No resources to dispose
+            if (_gitWatcher != null)
+            {
+                _gitWatcher.EnableRaisingEvents = false;
+                _gitWatcher.Dispose();
+                _gitWatcher = null;
+            }
         }
     }
 

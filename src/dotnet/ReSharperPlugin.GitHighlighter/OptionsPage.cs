@@ -10,7 +10,6 @@ using JetBrains.ReSharper.UnitTestFramework.Resources;
 namespace ReSharperPlugin.GitHighlighter;
 
 [OptionsPage(PID, PageTitle, typeof(UnitTestingThemedIcons.Session),
-    // Discover derived types of AEmptyOptionsPage
     ParentId = CodeInspectionPage.PID)]
 public class OptionsPage : BeSimpleOptionsPage
 {

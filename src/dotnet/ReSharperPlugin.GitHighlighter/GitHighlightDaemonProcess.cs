@@ -79,8 +79,6 @@ namespace ReSharperPlugin.GitHighlighter
             }
             catch (Exception ex)
             {
-                // Optionally log the exception
-                // _logger.Error(ex, "Error in GitHighlightDaemonProcess.Execute");
             }
         }
 
