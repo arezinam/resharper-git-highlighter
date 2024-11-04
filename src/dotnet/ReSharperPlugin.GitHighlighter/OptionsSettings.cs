@@ -5,7 +5,6 @@ namespace ReSharperPlugin.GitHighlighter;
 
 
 [SettingsKey(
-    // Discover others through usages of SettingsKeyAttribute
     Parent: typeof(EnvironmentSettings),
     Description: "Github Highlighter settings")]
 public class OptionsSettings

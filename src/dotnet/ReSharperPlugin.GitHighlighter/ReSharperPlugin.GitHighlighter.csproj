@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="JetBrains.ReSharper.SDK" Version="$(SdkVersion)" PrivateAssets="all" />
     <PackageReference Include="LibGit2Sharp" Version="0.30.0" />
+    <PackageReference Include="LibGit2Sharp.NativeBinaries" Version="2.0.322" />
     <PackageReference Include="Wave" Version="$(WaveVersion)" />
   </ItemGroup>
 
